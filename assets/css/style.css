@@ -53,7 +53,7 @@ blockquote{margin:0;padding:12px;border-left:4px solid var(--acc2);background:#f
 .carousel-dots{position:absolute;bottom:10px;left:0;right:0;display:flex;gap:8px;justify-content:center}
 .carousel-dots button{width:10px;height:10px;border-radius:999px;border:1px solid var(--border);background:#e5e7eb}
 .carousel-dots button.active{background:#0ea5e9}
-/* Sticky Buy bar on product pages */
+/* Sticky Buy bar */
 .buybar{position:fixed;bottom:64px;left:0;right:0;display:flex;justify-content:center;z-index:55}
 .buybar .inner{background:#111827;color:#fff;padding:10px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.25);display:flex;gap:12px;align-items:center}
 .buybar .inner .btn{background:#f97316}
