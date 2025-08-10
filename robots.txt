@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://signup-code.com/sitemap.xml

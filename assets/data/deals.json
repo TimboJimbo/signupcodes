@@ -1,7 +1,47 @@
 [
   {
-    "name": "Air fryer 4\u20136L",
+    "name": "Air Fryer 4\u20136L",
     "category": "Home & Kitchen",
-    "query": "Air fryer 4\u20136L"
+    "query": "Air Fryer 4L 5L 6L"
+  },
+  {
+    "name": "Robot Vacuum",
+    "category": "Home & Kitchen",
+    "query": "Robot Vacuum"
+  },
+  {
+    "name": "NVMe SSD 1\u20132TB",
+    "category": "Tech",
+    "query": "NVMe SSD 1TB 2TB"
+  },
+  {
+    "name": "Noise Cancelling Headphones",
+    "category": "Tech",
+    "query": "Noise Cancelling Headphones"
+  },
+  {
+    "name": "Mesh Wi\u2011Fi 6",
+    "category": "Tech",
+    "query": "WiFi 6 Mesh"
+  },
+  {
+    "name": "Gaming Headset",
+    "category": "Gaming",
+    "query": "Gaming Headset Wireless"
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "category": "Gaming",
+    "query": "Mechanical Keyboard"
+  },
+  {
+    "name": "Smart Plugs",
+    "category": "Smart Home",
+    "query": "Smart Plug"
+  },
+  {
+    "name": "LED Light Strips",
+    "category": "Smart Home",
+    "query": "LED Light Strip"
   }
 ]

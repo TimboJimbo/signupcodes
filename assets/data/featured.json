@@ -1,7 +1,42 @@
 [
   {
-    "name": "Ninja Air Fryer AF100UK",
-    "link": "https://www.amazon.co.uk/s?k=Ninja+AF100UK&tag=signupcodes-21",
-    "image": "https://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07PBBW4XF&Format=_SL1000_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=signupcodes-21"
+    "name": "Ninja Air Fryer 4.7L",
+    "asin": "B08D9Z3Q3G",
+    "link": "https://www.amazon.co.uk/s?k=Ninja+Air+Fryer&tag=signupcodes-21"
+  },
+  {
+    "name": "iRobot Roomba i7",
+    "asin": "B07PDZG1QV",
+    "link": "https://www.amazon.co.uk/s?k=Roomba+i7&tag=signupcodes-21"
+  },
+  {
+    "name": "Samsung 990 PRO 2TB",
+    "asin": "B0B6M4CSJF",
+    "link": "https://www.amazon.co.uk/s?k=Samsung+990+PRO+2TB&tag=signupcodes-21"
+  },
+  {
+    "name": "Logitech MX Master 3S",
+    "asin": "B09HM94VDS",
+    "link": "https://www.amazon.co.uk/s?k=Logitech+MX+Master+3S&tag=signupcodes-21"
+  },
+  {
+    "name": "SteelSeries Arctis 7X",
+    "asin": "B09VPL62T4",
+    "link": "https://www.amazon.co.uk/s?k=Arctis+7X&tag=signupcodes-21"
+  },
+  {
+    "name": "Elgato Stream Deck",
+    "asin": "B09738CV2G",
+    "link": "https://www.amazon.co.uk/s?k=Elgato+Stream+Deck+15&tag=signupcodes-21"
+  },
+  {
+    "name": "TP\u2011Link Deco Mesh Wi\u2011Fi 6",
+    "asin": "B08ZJL1WYM",
+    "link": "https://www.amazon.co.uk/s?k=TP-Link+Deco+WiFi+6&tag=signupcodes-21"
+  },
+  {
+    "name": "Philips Sonicare ProtectiveClean",
+    "asin": "B078B8F3KR",
+    "link": "https://www.amazon.co.uk/s?k=Philips+Sonicare+ProtectiveClean&tag=signupcodes-21"
   }
 ]
