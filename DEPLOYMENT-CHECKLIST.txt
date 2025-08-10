@@ -1,0 +1,15 @@
+DEPLOYMENT CHECKLIST — signup-code.com (2025-08-10)
+
+1) Upload all files in this package to your site's document root.
+2) Verify:
+   - /sitemap.xml loads and lists pages with lastmod dates
+   - /robots.txt lists your sitemap URL
+   - Favicons and apple-touch-icon render (check browser tab and mobile)
+   - Amazon disclosure banner appears near the top of pages
+3) Post-launch:
+   - Submit sitemap.xml in Google Search Console
+   - Crawl a few key pages and verify 200 status
+4) Performance:
+   - Images were optimized and CSS/JS lightly minified
+5) Compliance:
+   - Amazon Associate disclosure is visible on all pages you edited
