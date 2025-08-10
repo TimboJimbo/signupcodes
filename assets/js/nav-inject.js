@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const n=document.querySelector('nav.links');if(!n)return;const e=[...n.querySelectorAll('a')].some(a=>(a.getAttribute('href')||'').match(/\/mega-deals\/?$/));if(!e){const a=document.createElement('a');a.href='/mega-deals/';a.textContent='All Deals';n.appendChild(a);}});

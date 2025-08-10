@@ -1,8 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-  <url><loc>https://signup-code.com/</loc></url>
-  <url><loc>https://signup-code.com/privacy.html</loc></url>
-  <url><loc>https://signup-code.com/disclosure.html</loc></url>
-  <url><loc>https://signup-code.com/terms.html</loc></url>
-  <url><loc>https://signup-code.com/contact.html</loc></url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://signup-code.com/</loc><lastmod>2025-08-10</lastmod></url>
+<url><loc>https://signup-code.com/articles/biggest-savings-today.html</loc><lastmod>2025-08-10</lastmod></url>
+<url><loc>https://signup-code.com/mega-deals/</loc><lastmod>2025-08-10</lastmod></url>
+<url><loc>https://signup-code.com/privacy.html</loc><lastmod>2025-08-10</lastmod></url>
+<url><loc>https://signup-code.com/disclosure.html</loc><lastmod>2025-08-10</lastmod></url>
+<url><loc>https://signup-code.com/terms.html</loc><lastmod>2025-08-10</lastmod></url>
+<url><loc>https://signup-code.com/contact.html</loc><lastmod>2025-08-10</lastmod></url>
 </urlset>
