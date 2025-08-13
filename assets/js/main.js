@@ -1,163 +1,73 @@
 
-(function(){'use strict';
-  const AFF_TAG = window.__AFFILIATE_TAG__ || 'signupcodes-21';
-  const MEASUREMENT_ID = window.__MEASUREMENT_ID__ || '';
-  const qs = (sel, ctx=document)=>ctx.querySelector(sel);
-  const qsa = (sel, ctx=document)=>Array.from(ctx.querySelectorAll(sel));
+// GA4: swap with your Measurement ID
+window.SC_GA4 = { enabled: true, id: "G-2LGPRK5NX6" };
 
-  // ---- Amazon TLD selector & rewriter ----
-  const TLD_KEY = 'sc.amazon_tld';
-  const VALID_TLDS = new Set(['co.uk','com','de','ca','com.au']);
-  function getInitialTLD(){
-    const qp = new URLSearchParams(location.search);
-    const tldParam = qp.get('tld');
-    if(tldParam && VALID_TLDS.has(tldParam)){ localStorage.setItem(TLD_KEY, tldParam); return tldParam; }
-    const stored = localStorage.getItem(TLD_KEY);
-    if(stored && VALID_TLDS.has(stored)) return stored;
-    // Locale heuristic
-    const lang=(navigator.language||'').toLowerCase();
-    if(/-us$/.test(lang)) return 'com';
-    if(/-gb$/.test(lang)) return 'co.uk';
-    if(/-de$/.test(lang)) return 'de';
-    if(/-ca$/.test(lang)) return 'ca';
-    if(/-au$/.test(lang)) return 'com.au';
-    return 'co.uk';
+// Amazon affiliate
+window.SC_AMZ = {
+  tagUS: "signupcodes-20",
+  // Use Amazon OneLink if the account is configured; we still build clean Amazon.com links by default.
+  buildSearchURL(query){
+     const base = "https://www.amazon.com/s";
+     const params = new URLSearchParams({ k: query, tag: this.tagUS, ref: "sc_search" });
+     return `${base}?${params.toString()}`;
+  },
+  // If you have ASINs, you can swap to this:
+  buildAsinURL(asin){
+     const base = `https://www.amazon.com/dp/${asin}`;
+     const params = new URLSearchParams({ tag: this.tagUS, ref: "sc_dp" });
+     return `${base}?${params.toString()}`;
   }
-    const qp = new URLSearchParams(location.search);
-    const tldParam = qp.get('tld');
-    if(tldParam && VALID_TLDS.has(tldParam)){ localStorage.setItem(TLD_KEY, tldParam); return tldParam; }
-    const stored = localStorage.getItem(TLD_KEY);
-    if(stored && VALID_TLDS.has(stored)) return stored;
-    return 'co.uk'; // default aligns with -21 tag
-  }
-  function setTLD(tld){
-    if(!VALID_TLDS.has(tld)) return;
-    localStorage.setItem(TLD_KEY, tld);
-    applyAmazonTLD();
-    sendGAEvent('locale_change', { selected_tld: tld });
-  }
-  function applyAmazonTLD(){
-    const tld = getInitialTLD();
-    qsa('a[href*="amazon."]').forEach(a=>{
-      try{ const u=new URL(a.href, location.origin); if(!/amazon\./.test(u.host)) return;
-        const parts=u.host.split('.'); const sub=parts.slice(0,-2).join('.')||'www'; u.host=sub+'.amazon.'+tld; a.href=u.toString(); }catch(e){}
-    });
-    const sel = qs('#amazon-tld'); if(sel) sel.value=tld;
-  }
+};
 
-  // ---- Amazon link rewrite & hygiene ----
-  
-  // ---- CTA copy experiment ----
-  function setupCTACopy(){
-    const qp=new URLSearchParams(location.search);
-    let v=qp.get('ctaCopy')||localStorage.getItem('sc.cta_copy')||'random';
-    if(v==='random'){ v = ['v1','v2','v3'][Math.floor(Math.random()*3)]; localStorage.setItem('sc.cta_copy', v); }
-    const map={v1:'Browse on Amazon', v2:'See current availability', v3:'Check today\u2019s options'};
-    document.body.setAttribute('data-cta-copy', v);
-    (document.querySelectorAll('a.amazon-link')||[]).forEach(a=>{ if(map[v]) a.textContent = map[v]; });
-  }
-
-  function rewriteAmazonLinks(){
-    qsa('a[href*="amazon."]').forEach(a=>{
-      try{ const url=new URL(a.href, location.origin);
-        if(!/amazon\./.test(url.host)) return;
-        if(url.searchParams.get('tag') !== AFF_TAG) url.searchParams.set('tag', AFF_TAG);
-        a.href=url.toString();
-        a.setAttribute('target','_blank');
-        a.setAttribute('rel','nofollow sponsored noopener noreferrer');
-        a.classList.add('amazon-link');
-      }catch(e){}
-    });
-  }
-
-  // ---- Outbound click tracking (GA4) ----
-  function isExternal(href){ try{const u=new URL(href, location.href); return u.host !== location.host;}catch(e){return false} }
-  function isAmazon(href){ return /https?:\/\/[^\s]*amazon\./i.test(href); }
-  function sendGAEvent(name, params){ if(!window.gtag) return; window.gtag('event', name, params||{}); }
-  function setupOutboundTracking(){
-    document.addEventListener('click', function(e){
-      const a = e.target.closest('a[href]'); if(!a) return;
-      const href = a.href; if(!isExternal(href)) return;
-      sendGAEvent('outbound_click', {
-        destination: href, link_text: (a.textContent||'').trim().slice(0,120),
-        is_amazon: isAmazon(href), cta_copy: document.body.getAttribute('data-cta-copy')||'n/a', amazon_tld: getInitialTLD(), cta_variant: a.getAttribute('data-cta-variant') || 'n/a'
+// Outbound click handler
+function scOutbound(event){
+  const el = event.currentTarget;
+  const url = el.dataset.url;
+  if(!url) return;
+  try{
+    if (window.gtag && window.SC_GA4.enabled) {
+      gtag('event','click_out',{
+        'event_category':'affiliate',
+        'event_label': url,
+        'transport_type':'beacon',
+        'value':1
       });
-    }, true);
-  }
-
-  // ---- Consent Mode & GA4 loader (after consent only) ----
-  const CONSENT_KEY = 'sc.ga_consent';
-  function applyConsent(consented){
-    if(!window.gtag){ window.dataLayer=window.dataLayer||[]; window.gtag=function(){dataLayer.push(arguments);};
-      gtag('consent','default',{'ad_storage':'denied','analytics_storage':'denied','ad_user_data':'denied','ad_personalization':'denied'});
     }
-    const mode = consented ? 'granted' : 'denied';
-    gtag('consent','update',{'analytics_storage':mode});
-    if(consented && MEASUREMENT_ID && !window.__GA_LOADED__){ window.__GA_LOADED__=true;
-      const s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+MEASUREMENT_ID; document.head.appendChild(s);
-      window.dataLayer=window.dataLayer||[]; gtag('js', new Date()); gtag('config', MEASUREMENT_ID, { transport_type:'beacon', anonymize_ip:true });
-    }
-  }
-  function showConsentIfNeeded(){
-    const val=localStorage.getItem(CONSENT_KEY); const el=qs('#consent');
-    if(!el) return;
-    if(val==='granted'){ el.classList.add('hidden'); applyConsent(true); }
-    else if(val==='denied'){ el.classList.add('hidden'); applyConsent(false); }
-    else{ el.classList.remove('hidden'); applyConsent(false);
-      el.addEventListener('click', (e)=>{ const btn=e.target.closest('[data-consent]'); if(!btn) return;
-        const choice=btn.getAttribute('data-consent')==='accept'?'granted':'denied'; localStorage.setItem(CONSENT_KEY, choice);
-        el.classList.add('hidden'); applyConsent(choice==='granted'); });
-    }
-  }
+  }catch(e){}
+  // navigate
+  location.href = url;
+}
 
-  // ---- Sanitize all external links ----
-  function sanitizeExternalLinks(){
-    qsa('a[href]').forEach(a=>{ const href=a.getAttribute('href'); if(!href) return; if(isExternal(href)){ const rel=(a.getAttribute('rel')||'').split(/\s+/); ['noopener','noreferrer'].forEach(t=>{if(!rel.includes(t)) rel.push(t)}); a.setAttribute('rel', rel.filter(Boolean).join(' ').trim()); } });
-  }
-
-  // ---- CTA variant experiments ----
-  function setupCTAVariants(){
-      const variant = new URLSearchParams(location.search).get('ctaVariant');
-      if(!variant) return;
-      const show = new Set(variant.split('+'));
-      qsa('.cta-hero,.cta-mid,.cta-end').forEach(el=>el.style.display='none');
-      if(show.has('hero')) qsa('.cta-hero').forEach(el=>el.style.display='block');
-      if(show.has('mid')) qsa('.cta-mid').forEach(el=>el.style.display='block');
-      if(show.has('end')) qsa('.cta-end').forEach(el=>el.style.display='block');
-  }
-
-  // ---- Seasonal rotation ----
-  function rotateHomeGrid(){
-    const month=(new Date()).getMonth()+1;
-    if(location.pathname==='/' && (month>=6 && month<=9)){ const grid=qs('.grid'); if(!grid) return; const tents=Array.from(grid.querySelectorAll('.card h3 a')).find(a=>/Camping Tents/i.test(a.textContent||'')); if(tents) grid.prepend(tents.closest('.card')); }
-  }
-
-  document.addEventListener('DOMContentLoaded', function(){
-    rewriteAmazonLinks();
-    applyAmazonTLD();
-    setupOutboundTracking();
-    setupCTACopy();
-    
-    showConsentIfNeeded();
-    setupCTAVariants();
-    rotateHomeGrid();
-    sanitizeExternalLinks();
-    // Hook selector if present
-    const sel = qs('#amazon-tld'); if(sel) sel.addEventListener('change', e=>setTLD(e.target.value));
+function wireAffiliateLinks(){
+  document.querySelectorAll('[data-amz-query]').forEach(btn=>{
+    const url = SC_AMZ.buildSearchURL(btn.dataset.amzQuery);
+    btn.dataset.url = url;
+    btn.addEventListener('click', scOutbound);
   });
-})();
+  document.querySelectorAll('[data-amz-asin]').forEach(btn=>{
+    const url = SC_AMZ.buildAsinURL(btn.dataset.amzAsin);
+    btn.dataset.url = url;
+    btn.addEventListener('click', scOutbound);
+  });
+}
+document.addEventListener('DOMContentLoaded', wireAffiliateLinks);
 
-  // Amazon search handler
-  window.__searchAmazon = function(form){
-    try{
-      const q=(form.q && form.q.value || '').trim();
-      if(!q) return false;
-      const tld=getInitialTLD();
-      const url='https://www.amazon.'+tld+'/s?k='+encodeURIComponent(q)+'&tag='+(window.__AFFILIATE_TAG__||'signupcodes-21');
-      if(window.gtag){
-        window.gtag('event','outbound_click',{destination:url,link_text:'amazon_search',is_amazon:true,cta_variant:'search',cta_copy:document.body.getAttribute('data-cta-copy')||'n/a',amazon_tld:tld});
-      }
-      window.open(url,'_blank','noopener,noreferrer');
-      return false;
-    }catch(e){ return false; }
+// Lazy sizes fallback
+document.addEventListener('DOMContentLoaded', ()=>{
+  if('loading' in HTMLImageElement.prototype) return;
+  const imgs = document.querySelectorAll('img[loading="lazy"]');
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries, obs)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          const img = entry.target;
+          img.src = img.dataset.src;
+          obs.unobserve(img);
+        }
+      });
+    });
+    imgs.forEach(img=>io.observe(img));
+  } else {
+    imgs.forEach(img=>{ img.src = img.dataset.src; });
   }
+});
