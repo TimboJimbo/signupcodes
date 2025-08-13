@@ -2,6 +2,31 @@
 // GA4: swap with your Measurement ID
 window.SC_GA4 = { enabled: true, id: "G-2LGPRK5NX6" };
 
+
+  // Ensure buttons are anchors for accessibility/fallback
+  function promoteToAnchor(el, url){
+     // If element is a button, wrap it in an <a> or set attributes
+     if (el.tagName.toLowerCase() === 'button') {
+        el.setAttribute('data-url', url);
+        el.setAttribute('aria-label','Open Amazon in a new tab');
+        // also mirror to parent link if exists
+        const a = document.createElement('a');
+        a.className = el.className;
+        a.textContent = el.textContent || 'View on Amazon';
+        a.href = url;
+        a.target = '_blank';
+        a.rel = 'sponsored nofollow noopener';
+        a.addEventListener('click', scOutbound);
+        el.replaceWith(a);
+        return a;
+     } else {
+        el.href = url;
+        el.target = '_blank';
+        el.rel = 'sponsored nofollow noopener';
+        return el;
+     }
+  }
+
 // Amazon affiliate
 window.SC_AMZ = {
   tagUS: "signupcodes-20",
@@ -42,12 +67,12 @@ function wireAffiliateLinks(){
   document.querySelectorAll('[data-amz-query]').forEach(btn=>{
     const url = SC_AMZ.buildSearchURL(btn.dataset.amzQuery);
     btn.dataset.url = url;
-    btn.addEventListener('click', scOutbound);
+    promoteToAnchor(btn, url);
   });
   document.querySelectorAll('[data-amz-asin]').forEach(btn=>{
     const url = SC_AMZ.buildAsinURL(btn.dataset.amzAsin);
     btn.dataset.url = url;
-    btn.addEventListener('click', scOutbound);
+    promoteToAnchor(btn, url);
   });
 }
 document.addEventListener('DOMContentLoaded', wireAffiliateLinks);
