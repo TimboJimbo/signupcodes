@@ -1,3 +1,0 @@
-
-Upload these along with your existing sitemap.xml. No changes to URLs required.
-Ensure /assets/css/*, /assets/js/*, /assets/img/*, and favicon files exist at the site root.

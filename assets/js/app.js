@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('a[href*="amazon."]').forEach(a=>{try{const u=new URL(a.href);if(!u.searchParams.get('tag'))u.searchParams.set('tag','signupcodes-21');a.href=u.toString();}catch(e){}a.setAttribute('rel','nofollow sponsored noopener');a.setAttribute('target','_blank');});});
