@@ -2,514 +2,394 @@
   {
     "slug": "noise-cancelling-headphones",
     "title": "Best Noise-Cancelling Headphones",
-    "description": "Top ANC headphones for travel and focus.",
+    "desc": "Top ANC headphones for travel and focus.",
     "items": [
       {
         "name": "Sony WH-1000XM5",
-        "asin": "B09XS7JWHH",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09XS7JWHH&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09XS7JWHH/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09XS7JWHH"
       },
       {
         "name": "Bose QuietComfort Ultra",
-        "asin": "B0CCZ1L489",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0CCZ1L489&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B0CCZ1L489/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B0CCZ1L489"
       },
       {
         "name": "Soundcore Life Q30",
-        "asin": "B08HMWZBXC",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08HMWZBXC&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08HMWZBXC/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08HMWZBXC"
       }
     ]
   },
   {
     "slug": "wireless-earbuds",
     "title": "Best Wireless Earbuds",
-    "description": "Great fit, sound and ANC.",
+    "desc": "Great fit, sound and ANC.",
     "items": [
       {
         "name": "Sony WF-1000XM5",
-        "asin": "B0C33XXS56",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0C33XXS56&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B0C33XXS56/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B0C33XXS56"
       },
       {
         "name": "Bose QuietComfort Ultra Earbuds",
-        "asin": "B0CD2FSRDD",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0CD2FSRDD&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B0CD2FSRDD/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B0CD2FSRDD"
       },
       {
         "name": "TOZO T6",
-        "asin": "B07RGZ5NKS",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RGZ5NKS&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07RGZ5NKS/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07RGZ5NKS"
       }
     ]
   },
   {
     "slug": "bluetooth-speakers",
     "title": "Best Bluetooth Speakers",
-    "description": "Portable sound anywhere.",
+    "desc": "Portable sound anywhere.",
     "items": [
       {
         "name": "JBL Charge 5",
-        "asin": "B08X4YMTPM",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08X4YMTPM&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08X4YMTPM/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08X4YMTPM"
       },
       {
         "name": "OontZ Angle 3",
-        "asin": "B010OYASRG",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B010OYASRG&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B010OYASRG/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B010OYASRG"
       },
       {
         "name": "Sonos Roam",
-        "asin": "B08Z1RP9K8",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08Z1RP9K8&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08Z1RP9K8/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08Z1RP9K8"
       }
     ]
   },
   {
     "slug": "gaming-mice",
     "title": "Best Gaming Mice",
-    "description": "Precision picks for FPS.",
+    "desc": "Precision picks for FPS.",
     "items": [
       {
         "name": "Logitech G502 HERO",
-        "asin": "B07GBZ4Q68",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07GBZ4Q68&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07GBZ4Q68/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07GBZ4Q68"
       },
       {
         "name": "Razer DeathAdder V2",
-        "asin": "B082G5SPR5",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B082G5SPR5&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B082G5SPR5/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B082G5SPR5"
       },
       {
         "name": "Logitech G Pro X Superlight 2",
-        "asin": "B09NBWQDKX",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09NBWQDKX&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09NBWQDKX/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09NBWQDKX"
       }
     ]
   },
   {
     "slug": "mechanical-keyboards",
     "title": "Best Mechanical Keyboards",
-    "description": "Great typing, great feel.",
+    "desc": "Great typing, great feel.",
     "items": [
       {
         "name": "Keychron K2 (Hot-swap)",
-        "asin": "B0874HX6K2",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0874HX6K2&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B0874HX6K2/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B0874HX6K2"
       },
       {
         "name": "Logitech MX Mechanical Mini",
-        "asin": "B09LJTPXCF",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09LJTPXCF&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09LJTPXCF/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09LJTPXCF"
       },
       {
         "name": "Redragon K552 Kumara",
-        "asin": "B016MAK38U",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B016MAK38U&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B016MAK38U/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B016MAK38U"
       }
     ]
   },
   {
     "slug": "baby-monitors",
     "title": "Best Baby Monitors (No Wi\u2011Fi)",
-    "description": "Reliable, secure video monitors.",
+    "desc": "Reliable, secure video monitors.",
     "items": [
       {
         "name": "VTech VM819",
-        "asin": "B08V8RWP3W",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08V8RWP3W&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08V8RWP3W/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08V8RWP3W"
       },
       {
         "name": "Nanit Pro Smart Baby Monitor",
-        "asin": "B08R13YRTD",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08R13YRTD&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08R13YRTD/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08R13YRTD"
       }
     ]
   },
   {
     "slug": "air-purifiers",
     "title": "Best Air Purifiers",
-    "description": "Keep your air clean and fresh.",
+    "desc": "Keep your air clean and fresh.",
     "items": [
       {
         "name": "LEVOIT Core 300S",
-        "asin": "B08L73QL1V",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L73QL1V&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08L73QL1V/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08L73QL1V"
       },
       {
         "name": "GermGuardian AC4825E",
-        "asin": "B004VGIGVY",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B004VGIGVY&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B004VGIGVY/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B004VGIGVY"
       },
       {
         "name": "Coway AP-1512HH Mighty",
-        "asin": "B01728NLRG",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01728NLRG&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B01728NLRG/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B01728NLRG"
       }
     ]
   },
   {
     "slug": "robot-vacuums",
     "title": "Best Robot Vacuums",
-    "description": "Hands-off floor cleaning.",
+    "desc": "Hands-off floor cleaning.",
     "items": [
       {
         "name": "Roborock Q5+ Self-Empty",
-        "asin": "B09Y4ZQYQP",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09Y4ZQYQP&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09Y4ZQYQP/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09Y4ZQYQP"
       },
       {
         "name": "eufy RoboVac 11S",
-        "asin": "B07XNQTJ8H",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07XNQTJ8H&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07XNQTJ8H/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07XNQTJ8H"
       },
       {
         "name": "iRobot Roomba j7+ Self-Empty",
-        "asin": "B094NYHTMF",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B094NYHTMF&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B094NYHTMF/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B094NYHTMF"
       }
     ]
   },
   {
     "slug": "dash-cams",
     "title": "Best Dash Cams",
-    "description": "Reliable cams for every trip.",
+    "desc": "Reliable cams for every trip.",
     "items": [
       {
         "name": "Vantrue N4 3\u2011Channel",
-        "asin": "B083V6K8RH",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B083V6K8RH&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B083V6K8RH/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B083V6K8RH"
       },
       {
         "name": "Nextbase 622GW 4K",
-        "asin": "B09RNHK9HG",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09RNHK9HG&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09RNHK9HG/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09RNHK9HG"
       }
     ]
   },
   {
     "slug": "power-banks",
     "title": "Best Power Banks",
-    "description": "High\u2011capacity, fast\u2011charging.",
+    "desc": "High\u2011capacity, fast\u2011charging.",
     "items": [
       {
         "name": "Anker 737 Power Bank (140W)",
-        "asin": "B09VPHVT2Z",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09VPHVT2Z&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09VPHVT2Z/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09VPHVT2Z"
       },
       {
         "name": "INIU 10000mAh",
-        "asin": "B07YZ2WCFM",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07YZ2WCFM&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07YZ2WCFM/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07YZ2WCFM"
       }
     ]
   },
   {
     "slug": "portable-ssds",
     "title": "Best Portable SSDs",
-    "description": "Fast, durable external drives.",
+    "desc": "Fast, durable external drives.",
     "items": [
       {
         "name": "Samsung T7 Shield 2TB",
-        "asin": "B09VLK9VQB",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09VLK9VQB&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09VLK9VQB/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09VLK9VQB"
       },
       {
         "name": "SanDisk Extreme Portable 1TB",
-        "asin": "B08HN37XCQ",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08HN37XCQ&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08HN37XCQ/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08HN37XCQ"
       },
       {
         "name": "Samsung T9 2TB",
-        "asin": "B0CH4PSJ4F",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0CH4PSJ4F&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B0CH4PSJ4F/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B0CH4PSJ4F"
       }
     ]
   },
   {
     "slug": "tvs-65-inch",
     "title": "Best 65\" 4K TVs",
-    "description": "Movies, sports and gaming.",
+    "desc": "Movies, sports and gaming.",
     "items": [
       {
         "name": "LG C3 OLED 65\"",
-        "asin": "B0BVXDPZP3",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0BVXDPZP3&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B0BVXDPZP3/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B0BVXDPZP3"
       },
       {
         "name": "Hisense U6K 65\"",
-        "asin": "B0C6XMCWBR",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0C6XMCWBR&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B0C6XMCWBR/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B0C6XMCWBR"
       }
     ]
   },
   {
     "slug": "soundbars",
     "title": "Best Soundbars",
-    "description": "Big sound upgrade for any TV.",
+    "desc": "Big sound upgrade for any TV.",
     "items": [
       {
         "name": "Sonos Beam (Gen 2)",
-        "asin": "B09GPYL7BJ",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09GPYL7BJ&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09GPYL7BJ/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09GPYL7BJ"
       },
       {
         "name": "VIZIO V\u2011Series 2.1",
-        "asin": "B08CGRGY4N",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08CGRGY4N&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08CGRGY4N/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08CGRGY4N"
       }
     ]
   },
   {
     "slug": "espresso-machines",
     "title": "Best Espresso Machines",
-    "description": "From budget to barista\u2011level.",
+    "desc": "From budget to barista\u2011level.",
     "items": [
       {
         "name": "Breville Barista Express",
-        "asin": "B00CH9QWOU",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00CH9QWOU&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B00CH9QWOU/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B00CH9QWOU"
       },
       {
         "name": "De'Longhi Stilosa",
-        "asin": "B08G4TPJ53",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08G4TPJ53&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08G4TPJ53/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08G4TPJ53"
       },
       {
         "name": "Breville Barista Pro",
-        "asin": "B07PNK6Q88",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07PNK6Q88&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07PNK6Q88/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07PNK6Q88"
       }
     ]
   },
   {
     "slug": "cordless-vacuums",
     "title": "Best Cordless Vacuums",
-    "description": "Powerful picks for quick cleanups.",
+    "desc": "Powerful picks for quick cleanups.",
     "items": [
       {
         "name": "Dyson V8",
-        "asin": "B07TZH5NWP",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07TZH5NWP&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07TZH5NWP/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07TZH5NWP"
       },
       {
         "name": "Tineco A11 Hero",
-        "asin": "B07G39B11B",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07G39B11B&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07G39B11B/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07G39B11B"
       },
       {
         "name": "Dyson V12 Detect Slim",
-        "asin": "B095QJT64N",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B095QJT64N&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B095QJT64N/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B095QJT64N"
       }
     ]
   },
   {
     "slug": "robot-mops",
     "title": "Best Robot Mops",
-    "description": "Mop + vacuum combos that work.",
+    "desc": "Mop + vacuum combos that work.",
     "items": [
       {
         "name": "Roborock S7",
-        "asin": "B08VHXZZ22",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08VHXZZ22&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08VHXZZ22/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08VHXZZ22"
       },
       {
         "name": "ECOVACS Deebot N8 Pro",
-        "asin": "B08N3LF1LY",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08N3LF1LY&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08N3LF1LY/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08N3LF1LY"
       },
       {
         "name": "iRobot Braava Jet m6",
-        "asin": "B07R5QD598",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07R5QD598&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07R5QD598/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07R5QD598"
       }
     ]
   },
   {
     "slug": "action-cameras",
     "title": "Best Action Cameras",
-    "description": "Adventure\u2011ready cameras.",
+    "desc": "Adventure\u2011ready cameras.",
     "items": [
       {
         "name": "GoPro HERO12 Black",
-        "asin": "B0CHZ5WBTH",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0CHZ5WBTH&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B0CHZ5WBTH/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B0CHZ5WBTH"
       },
       {
         "name": "Insta360 X3",
-        "asin": "B0B9H572LC",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0B9H572LC&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B0B9H572LC/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B0B9H572LC"
       },
       {
         "name": "AKASO Brave 7 LE",
-        "asin": "B08B3MFDQL",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08B3MFDQL&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08B3MFDQL/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08B3MFDQL"
       }
     ]
   },
   {
     "slug": "monitors-27-inch",
     "title": "Best 27\" Monitors",
-    "description": "4K work or 1440p gaming.",
+    "desc": "4K work or 1440p gaming.",
     "items": [
       {
         "name": "Dell S2721QS 27\" 4K",
-        "asin": "B08L5TG1RD",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5TG1RD&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08L5TG1RD/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08L5TG1RD"
       },
       {
         "name": "LG 27GP850\u2011B 27\" 165Hz",
-        "asin": "B093MTSTKD",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B093MTSTKD&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B093MTSTKD/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B093MTSTKD"
       },
       {
         "name": "AOC 27B2H 27\" 75Hz",
-        "asin": "B07WVNBY1G",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07WVNBY1G&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07WVNBY1G/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07WVNBY1G"
       }
     ]
   },
   {
     "slug": "car-phone-mounts",
     "title": "Best Car Phone Mounts",
-    "description": "Rock\u2011solid dashboard or vent.",
+    "desc": "Rock\u2011solid dashboard or vent.",
     "items": [
       {
         "name": "iOttie Easy One Touch 5 (Cup)",
-        "asin": "B089J28SHP",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B089J28SHP&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B089J28SHP/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B089J28SHP"
       },
       {
         "name": "iOttie Easy One Touch 5 (Vent)",
-        "asin": "B09YGN6NVV",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09YGN6NVV&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09YGN6NVV/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09YGN6NVV"
       }
     ]
   },
   {
     "slug": "luggage-carry-on",
     "title": "Best Carry\u2011On Luggage",
-    "description": "Durable spinners sized right.",
+    "desc": "Durable spinners sized right.",
     "items": [
       {
         "name": "Samsonite Winfield 2 20\"",
-        "asin": "B00EALLN42",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00EALLN42&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B00EALLN42/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B00EALLN42"
       },
       {
         "name": "Amazon Basics Hardside 20\"",
-        "asin": "B071VG5N9D",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B071VG5N9D&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B071VG5N9D/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B071VG5N9D"
       },
       {
         "name": "Samsonite Freeform 21\"",
-        "asin": "B07BKLHKD9",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07BKLHKD9&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07BKLHKD9/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07BKLHKD9"
       }
     ]
   },
   {
     "slug": "electric-kettles",
     "title": "Best Electric Kettles",
-    "description": "Fast boilers for coffee/tea.",
+    "desc": "Fast boilers for coffee/tea.",
     "items": [
       {
         "name": "COSORI 1.7L Glass",
-        "asin": "B08PP48979",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08PP48979&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B08PP48979/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B08PP48979"
       },
       {
         "name": "Mueller Ultra 1.8L",
-        "asin": "B07TZ5YHJN",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07TZ5YHJN&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07TZ5YHJN/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07TZ5YHJN"
       },
       {
         "name": "Fellow Stagg EKG",
-        "asin": "B07DP8LH16",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07DP8LH16&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B07DP8LH16/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B07DP8LH16"
       }
     ]
   },
   {
     "slug": "amazon-devices",
     "title": "Best Amazon Devices",
-    "description": "Alexa, streaming and reading.",
+    "desc": "Alexa, streaming, reading.",
     "items": [
       {
         "name": "Echo Dot (5th Gen)",
-        "asin": "B09B93ZDG4",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09B93ZDG4&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09B93ZDG4/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09B93ZDG4"
       },
       {
         "name": "Fire TV Stick 4K (2023)",
-        "asin": "B0CJL4J6FG",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0CJL4J6FG&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B0CJL4J6FG/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B0CJL4J6FG"
       },
       {
         "name": "Kindle (2022)",
-        "asin": "B09SWRYPB2",
-        "image": "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09SWRYPB2&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=signupcodes-20&language=en_US",
-        "url": "https://www.amazon.com/dp/B09SWRYPB2/?tag=signupcodes-20&th=1&psc=1"
+        "asin": "B09SWRYPB2"
       }
     ]
   }
