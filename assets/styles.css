@@ -11,3 +11,5 @@ h1{font-size:28px;margin:18px 0}.fine{color:#98a3b8;font-size:12px}
 .notice.small a{color:#bbf7d0;font-weight:600}.notice.small a:hover{text-decoration:underline}
 @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:620px){.grid{grid-template-columns:1fr}}
+
+.nav-bottom{position:fixed;bottom:0;left:0;right:0;background:#0e1626;border-top:1px solid #22304a;display:flex;gap:8px;padding:8px 10px;z-index:999;justify-content:space-around} .nav-bottom a{flex:1;text-align:center;padding:10px 8px;border-radius:12px;background:#1b283e;color:#e7e9ee;text-decoration:none;font-weight:600} body{padding-bottom:64px} .modal{position:fixed;inset:0;background:rgba(0,0,0,.65);display:none;align-items:center;justify-content:center;z-index:1000} .modal[open]{display:flex} .modal .box{background:#111a2b;border:1px solid #22304a;border-radius:16px;max-width:520px;width:92%;padding:18px}
