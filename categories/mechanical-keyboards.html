@@ -27,6 +27,12 @@
 <body>
 <div class="disclosure">We may earn from qualifying purchases. Links to Amazon use our affiliate tag. <span class="dot">•</span> <a href="/guides/buying-tips.html">Buying tips</a></div>
 <header class="site-header">
+  <form id="amazon-search" class="amazon-search" role="search" aria-label="Search Amazon" onsubmit="return window.__searchAmazon && window.__searchAmazon(this)">
+    <input type="search" name="q" placeholder="Search Amazon…" aria-label="Search Amazon">
+    <button type="submit" class="btn small">Search</button>
+    <div class="search-micro micro-trust">Opens Amazon • Check availability on-site.</div>
+  </form>
+
   <a class="logo" href="/">Signup<span>Code</span></a>
   <nav class="nav"><a href="/guides/buying-tips.html">Buying Tips</a></nav>
 

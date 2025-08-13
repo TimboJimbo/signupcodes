@@ -14,6 +14,20 @@
     if(tldParam && VALID_TLDS.has(tldParam)){ localStorage.setItem(TLD_KEY, tldParam); return tldParam; }
     const stored = localStorage.getItem(TLD_KEY);
     if(stored && VALID_TLDS.has(stored)) return stored;
+    // Locale heuristic
+    const lang=(navigator.language||'').toLowerCase();
+    if(/-us$/.test(lang)) return 'com';
+    if(/-gb$/.test(lang)) return 'co.uk';
+    if(/-de$/.test(lang)) return 'de';
+    if(/-ca$/.test(lang)) return 'ca';
+    if(/-au$/.test(lang)) return 'com.au';
+    return 'co.uk';
+  }
+    const qp = new URLSearchParams(location.search);
+    const tldParam = qp.get('tld');
+    if(tldParam && VALID_TLDS.has(tldParam)){ localStorage.setItem(TLD_KEY, tldParam); return tldParam; }
+    const stored = localStorage.getItem(TLD_KEY);
+    if(stored && VALID_TLDS.has(stored)) return stored;
     return 'co.uk'; // default aligns with -21 tag
   }
   function setTLD(tld){
@@ -32,6 +46,17 @@
   }
 
   // ---- Amazon link rewrite & hygiene ----
+  
+  // ---- CTA copy experiment ----
+  function setupCTACopy(){
+    const qp=new URLSearchParams(location.search);
+    let v=qp.get('ctaCopy')||localStorage.getItem('sc.cta_copy')||'random';
+    if(v==='random'){ v = ['v1','v2','v3'][Math.floor(Math.random()*3)]; localStorage.setItem('sc.cta_copy', v); }
+    const map={v1:'Browse on Amazon', v2:'See current availability', v3:'Check today\u2019s options'};
+    document.body.setAttribute('data-cta-copy', v);
+    (document.querySelectorAll('a.amazon-link')||[]).forEach(a=>{ if(map[v]) a.textContent = map[v]; });
+  }
+
   function rewriteAmazonLinks(){
     qsa('a[href*="amazon."]').forEach(a=>{
       try{ const url=new URL(a.href, location.origin);
@@ -55,7 +80,7 @@
       const href = a.href; if(!isExternal(href)) return;
       sendGAEvent('outbound_click', {
         destination: href, link_text: (a.textContent||'').trim().slice(0,120),
-        is_amazon: isAmazon(href), cta_variant: a.getAttribute('data-cta-variant') || 'n/a'
+        is_amazon: isAmazon(href), cta_copy: document.body.getAttribute('data-cta-copy')||'n/a', amazon_tld: getInitialTLD(), cta_variant: a.getAttribute('data-cta-variant') || 'n/a'
       });
     }, true);
   }
@@ -111,6 +136,8 @@
     rewriteAmazonLinks();
     applyAmazonTLD();
     setupOutboundTracking();
+    setupCTACopy();
+    
     showConsentIfNeeded();
     setupCTAVariants();
     rotateHomeGrid();
@@ -119,3 +146,18 @@
     const sel = qs('#amazon-tld'); if(sel) sel.addEventListener('change', e=>setTLD(e.target.value));
   });
 })();
+
+  // Amazon search handler
+  window.__searchAmazon = function(form){
+    try{
+      const q=(form.q && form.q.value || '').trim();
+      if(!q) return false;
+      const tld=getInitialTLD();
+      const url='https://www.amazon.'+tld+'/s?k='+encodeURIComponent(q)+'&tag='+(window.__AFFILIATE_TAG__||'signupcodes-21');
+      if(window.gtag){
+        window.gtag('event','outbound_click',{destination:url,link_text:'amazon_search',is_amazon:true,cta_variant:'search',cta_copy:document.body.getAttribute('data-cta-copy')||'n/a',amazon_tld:tld});
+      }
+      window.open(url,'_blank','noopener,noreferrer');
+      return false;
+    }catch(e){ return false; }
+  }
