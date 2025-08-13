@@ -70,3 +70,6 @@ img[loading="lazy"]{background:#0b1220}
 @media(max-width: 520px){
   .grid{grid-template-columns:1fr}
 }
+
+.notice.small a{color:#bbf7d0;font-weight:600}
+.notice.small a:hover{text-decoration:underline}

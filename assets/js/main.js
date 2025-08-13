@@ -63,36 +63,21 @@ function scOutbound(event){
   location.href = url;
 }
 
+);
+
 function wireAffiliateLinks(){
-  document.querySelectorAll('[data-amz-query]').forEach(btn=>{
-    const url = SC_AMZ.buildSearchURL(btn.dataset.amzQuery);
-    btn.dataset.url = url;
-    promoteToAnchor(btn, url);
-  });
-  document.querySelectorAll('[data-amz-asin]').forEach(btn=>{
-    const url = SC_AMZ.buildAsinURL(btn.dataset.amzAsin);
-    btn.dataset.url = url;
-    promoteToAnchor(btn, url);
+  const els = document.querySelectorAll('[data-amz-asin],[data-amz-query]');
+  els.forEach(el=>{
+    const url = scBuildAmazonUrl(el);
+    // convert to accessible anchor
+    const a = document.createElement('a');
+    a.className = el.className;
+    a.textContent = el.textContent || 'View on Amazon';
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'sponsored nofollow noopener';
+    a.addEventListener('click', scOutbound);
+    el.replaceWith(a);
   });
 }
 document.addEventListener('DOMContentLoaded', wireAffiliateLinks);
-
-// Lazy sizes fallback
-document.addEventListener('DOMContentLoaded', ()=>{
-  if('loading' in HTMLImageElement.prototype) return;
-  const imgs = document.querySelectorAll('img[loading="lazy"]');
-  if('IntersectionObserver' in window){
-    const io = new IntersectionObserver((entries, obs)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          const img = entry.target;
-          img.src = img.dataset.src;
-          obs.unobserve(img);
-        }
-      });
-    });
-    imgs.forEach(img=>io.observe(img));
-  } else {
-    imgs.forEach(img=>{ img.src = img.dataset.src; });
-  }
-});
