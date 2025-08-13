@@ -13,3 +13,34 @@ h1{font-size:28px;margin:18px 0}.fine{color:#98a3b8;font-size:12px}
 @media (max-width:620px){.grid{grid-template-columns:1fr}}
 
 .nav-bottom{position:fixed;bottom:0;left:0;right:0;background:#0e1626;border-top:1px solid #22304a;display:flex;gap:8px;padding:8px 10px;z-index:999;justify-content:space-around} .nav-bottom a{flex:1;text-align:center;padding:10px 8px;border-radius:12px;background:#1b283e;color:#e7e9ee;text-decoration:none;font-weight:600} body{padding-bottom:64px} .modal{position:fixed;inset:0;background:rgba(0,0,0,.65);display:none;align-items:center;justify-content:center;z-index:1000} .modal[open]{display:flex} .modal .box{background:#111a2b;border:1px solid #22304a;border-radius:16px;max-width:520px;width:92%;padding:18px}
+/* Visual polish & accessibility */
+:root{
+  --bg:#0b0f17;--card:#121826;--text:#e7e9ee;--muted:#a7afc0;--accent:#82e0aa;
+  --btn:#1e2f25;--btn-border:#315842;--btn-hover:#254633;
+}
+body{background:var(--bg);color:var(--text)}
+.card{box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.card .btn{transition:transform .08s ease, background .15s ease}
+.card .btn:hover{background:var(--btn-hover);transform:translateY(-1px)}
+a:focus,button:focus{outline:2px solid var(--accent);outline-offset:2px;border-radius:10px}
+h1{letter-spacing:.2px}
+/* Sticky mobile bottom bar */
+.nav-bottom{position:fixed;bottom:0;left:0;right:0;background:#0e1626;border-top:1px solid #22304a;display:flex;justify-content:space-around;gap:8px;padding:8px 10px;z-index:999}
+.nav-bottom a{flex:1;text-align:center;padding:10px 8px;border-radius:12px;background:#1b283e;color:var(--text);text-decoration:none;font-weight:700}
+.nav-bottom a:hover{text-decoration:underline}
+/* Reserve space to avoid CLS */
+body{padding-bottom:68px}
+/* Modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.65);display:none;align-items:center;justify-content:center;z-index:1000}
+.modal[open]{display:flex}
+.modal .box{background:#111a2b;border:1px solid #22304a;border-radius:16px;max-width:520px;width:92%;padding:18px}
+.modal .close{float:right;background:transparent;border:0;color:var(--text);font-size:20px;cursor:pointer}
+.rail{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.rail a{background:#13233a;border:1px solid #22304a;padding:8px 10px;border-radius:12px;text-decoration:none;color:#d7dcea;font-weight:700}
+.trustline{margin:6px 0 14px 0;color:#a7afc0}
+.card .badge{display:inline-block;font-size:11px;border:1px solid #2a3a58;border-radius:999px;padding:2px 8px;margin-top:4px;color:#bbf7d0}
+/* Images */
+.card img{width:100%;height:190px;object-fit:contain;background:#0d1422;border-radius:12px}
+/* Minor grid adjustments */
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.grid{grid-template-columns:1fr}}
